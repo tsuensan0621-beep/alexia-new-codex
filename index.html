@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f9f6ed">
+<title>アレクシアと風の羅針盤 | SKY ATLAS</title>
+<link rel="icon" href="assets/compass.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="mast"><a href="#home" class="brand" aria-label="空の航海誌 ホーム"><img src="assets/compass.png" alt=""><span>空の航海誌<small>SKY ATLAS</small></span></a><nav aria-label="メインメニュー"><button id="mapNav" class="nav active"><i data-icon="map"></i>航路図</button><button id="logNav" class="nav"><i data-icon="book"></i>航海手帳</button><span class="navline"></span><button id="sound" class="sound" aria-label="サウンドをオン"><i data-icon="mute"></i><span>音声 OFF</span></button></nav></div></header>
+<main id="home">
+<section class="hero"><div class="scenery"></div><div class="hero-inner"><div class="sigil"></div><img class="alexia" src="assets/alexia.webp" alt="青い旅装に剣を携えたアレクシア"><div class="hero-copy"><div class="eyebrow hero-kicker"><b>✦</b> SKY ATLAS ADVENTURE <b>✦</b></div><h1>アレクシア<span>と</span><br>風の羅針盤</h1><div class="title-en">ALEXIA &amp; THE WIND COMPASS</div><p>風を放ち、空に眠る灯をともそう。<br>六つの浮島をめぐる、反射と連鎖の冒険。</p><div class="actions"><button id="start" class="primary"><i data-icon="compass"></i><span>冒険をはじめる</span><i data-icon="arrow"></i></button><button class="help-link" id="help"><i data-icon="help"></i>遊び方</button></div></div><div class="hero-coordinate"><span>✦</span> AERIA ARCHIPELAGO</div></div></section>
+<section class="route wrap" id="route"><div class="section-row"><div><div class="eyebrow"><span class="dash"></span> ROUTE MAP</div><h2>空島の航路</h2></div><span id="progress" class="pill"></span></div>
+<div class="mapframe"><div class="mapscroll"><div class="chart" id="chart"><canvas id="chartLines" aria-hidden="true"></canvas><span class="chart-name">THE AERIA ARCHIPELAGO</span><div class="map-rose" aria-hidden="true"><span>N</span><img src="assets/compass.png" alt=""></div></div></div><div class="map-foot"><span><b class="legend-dot"></b> 探索できる島</span><span><b class="legend-dot closed"></b> 未踏の島</span><small>SKY CHART &nbsp; / &nbsp; VOL. I</small></div></div></section>
+</main>
+<main id="journal" class="wrap subpage" hidden></main>
+<main id="voyage" class="wrap subpage" hidden></main>
+<footer><span>✧ &nbsp; SKY ATLAS</span><span id="saveStatus"><i data-icon="save"></i> 航海記録は自動保存されます</span></footer>
+<dialog id="dialog"><div class="dialog-content" id="dialogBody"></div></dialog>
+<script defer src="data.js"></script><script defer src="engine.js"></script><script defer src="presentation.js"></script><script defer src="board.js"></script><script defer src="game.js"></script>
+</body></html>
